@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>선택자 id, class, child</title>
+    <!-- jQuery 사용방식2 (CDN 방식) -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<style>
+    .bg-aqua { background-color: aqua; }
+    .bg-yellow { background-color: yellow; }
+    
+    .red { color: red; }
+    .green { color: green; }
+    .blue { color: blue; }
+    
+    .horizontal {
+        float: left;
+        list-style: none;
+        margin: 10px;
+    }
+</style>
+<script>
+    
+</script>  
+<style>
+    li { border: 1px solid #777;  margin: 5px; }
+    div { border: 5px solid green; padding: 10px; margin: 5px; }
+    div > div { border: 2px solid #555; }
+    p { border: 1px solid #777; }
+    span { border: 2px solid orange; }
+</style>    
+</head>
+<body>
+    <h1>선택자 id, class, child</h1>
+    <ul>
+        <li>Java</li>
+        <li>HTML5 &amp; CSS3</li>
+        <li class="js">JavaScript &amp; jQuery</li>
+        <li id="jsp">Servlet &amp; JSP</li>
+    </ul>
+    <hr>
+    <ol>
+        <li>Java</li>
+        <li>HTML5 &amp; CSS3</li>
+        <li class="js">JavaScript &amp; jQuery</li>
+        <li>Servlet &amp; JSP</li>
+    </ol>
+    <hr>
+    <div>
+        <p>div-p 태그</p>
+        <div>
+            div-div 태그
+            <p>div-div-p 태그</p>
+            <span>div-div-span 태그</span>
+        </div>
+        <div>
+            <p>div-div-p 태그</p>
+        </div>
+        <p>div-p 태그</p>
+    </div>
+
+    
+    <br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br><br><br><br>
+</body>
+</html>
+
+

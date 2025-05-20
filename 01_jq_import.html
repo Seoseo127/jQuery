@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery import</title>
+<script>
+    console.log("head JavaScript(시작)~~~~");
+    window.onload = function(){
+        console.log("window.onload 이벤트 처리-----");
+        document.getElementById("id1").style.color = "blue";
+        
+        //(개인적실습) JavaScript 사용해서 p 태그 선택후 배경색 yellow 적용
+    };
+    
+    //제이쿼리(jQuery) 사용방식 3가지
+    // jQuery = $ 부호로 대체 사용
+    // 방식1 : $(document).ready(function(){});
+    $(document).ready(function(){
+        console.log("jQuery docuement ready ~~~~");
+        $("#id1").css("border", "3px solid red");
+    });
+    
+    // 방식2 : $().ready(function(){});
+    $().ready(function(){
+        $("#id1").css("color", "orange");
+    });
+    
+    // 방식3 : $(function(){});
+    $(function(){
+        $("#id1").css("font-size", "3em");
+        $("p").css("border", "2px solid black");
+    });
+    
+    console.log("head JavaScript(끝)----------");
+</script>    
+</head>
+<body>
+    <h1 id="id1">제이쿼리(jQuery)</h1>
+    
+    <p>p태그1</p>
+    <p>p태그2</p>
+    <p>p태그3</p>
+
+<script>
+    console.log("body JavaScript ~~~~(DOM사용가능)");
+    //document.getElementById("id1").style.backgroundColor = "aqua";
+    $("#id1").css("background-color", "gray");
+</script>
+</body>
+</html>
+
+
+
+
+
+
